@@ -1,0 +1,25 @@
+# RAG Agent — requirements (March 2026)
+# Install all:  pip install -r requirements.txt
+
+# ── LangChain core ───────────────────────────────────────────────────────────
+langchain>=1.2.0
+langchain-core>=1.2.0
+langchain-text-splitters>=1.1.1
+langchain-community>=0.4.1
+
+# ── LLM: Groq ────────────────────────────────────────────────────────────────
+langchain-groq>=1.1.2
+
+# ── Embeddings — all three providers included ────────────────────────────────
+langchain-huggingface>=0.1.0       # FREE: HuggingFace local + API embeddings
+sentence-transformers>=3.0.0       # required for HuggingFaceEmbeddings (local)
+langchain-openai>=1.1.10           # PAID: OpenAI embeddings (optional)
+
+# ── Vector store ─────────────────────────────────────────────────────────────
+faiss-cpu>=1.8.0
+
+# ── PDF parsing ──────────────────────────────────────────────────────────────
+pypdf>=4.3.0                       # NOT PyPDF2 (abandoned)
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+streamlit>=1.35.0
